@@ -1,0 +1,27 @@
+{
+  "name": "@monorepo/shared",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node src/index.js",
+    "build": "babel src --out-dir dist --presets minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/node": "^7.7.4",
+    "@babel/preset-env": "^7.7.6",
+    "babel-preset-minify": "^0.5.1",
+    "nodemon": "^2.0.1"
+  }
+}
