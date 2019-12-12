@@ -1,12 +1,12 @@
 import express from 'express'
 import bodyParser from 'body-parser'
 import cors from 'cors'
-import { db } from '@monorepo/shared'
+import { db, config } from '@monorepo/shared'
 
 const app = express()
 const port = process.env.PORT || 8080
 
-console.log(db)
+console.log(db, config)
 app.use(bodyParser.json())
 app.use(cors())
 
